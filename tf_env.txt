@@ -1,0 +1,74 @@
+
+== cat /etc/issue ===============================================
+Linux obinclcv-HP-Z440-Workstation 4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+VERSION="16.04.4 LTS (Xenial Xerus)"
+VERSION_ID="16.04"
+VERSION_CODENAME=xenial
+
+== are we in docker =============================================
+No
+
+== compiler =====================================================
+c++ (Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+== uname -a =====================================================
+Linux obinclcv-HP-Z440-Workstation 4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+
+== check pips ===================================================
+numpy (1.14.2)
+protobuf (3.5.2)
+tensorflow-gpu (1.6.0)
+tensorflow-tensorboard (0.4.0)
+
+== check for virtualenv =========================================
+False
+
+== tensorflow import ============================================
+tf.VERSION = 1.6.0
+tf.GIT_VERSION = v1.6.0-0-gd2e24b6039
+tf.COMPILER_VERSION = v1.6.0-0-gd2e24b6039
+Sanity check: array([1], dtype=int32)
+/home/obinclcv/anaconda2/envs/tensorrt/lib/python2.7/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+== env ==========================================================
+LD_LIBRARY_PATH /usr/local/cuda-9.0/lib64:
+DYLD_LIBRARY_PATH is unset
+
+== nvidia-smi ===================================================
+Fri Apr 13 15:31:16 2018       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 384.111                Driver Version: 384.111                   |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce GTX TIT...  Off  | 00000000:02:00.0  On |                  N/A |
+| 22%   41C    P2    89W / 250W |    349MiB / 12202MiB |     51%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0      1284      G   /usr/lib/xorg/Xorg                           151MiB |
+|    0      3176      G   compiz                                        72MiB |
+|    0      4080      G   /usr/lib/firefox/firefox                       4MiB |
+|    0      4122      C   ...clcv/anaconda2/envs/tensorrt/bin/python   106MiB |
++-----------------------------------------------------------------------------+
+
+== cuda libs  ===================================================
+/usr/local/cuda-9.0/targets/x86_64-linux/lib/libcudart_static.a
+/usr/local/cuda-9.0/targets/x86_64-linux/lib/libcudart.so.9.0.252
+/usr/local/cuda-9.0/targets/aarch64-linux/lib/libcudart_static.a
+/usr/local/cuda-9.0/targets/aarch64-linux/lib/libcudart.so.9.0.252
+/usr/local/cuda-9.0/doc/man/man7/libcudart.so.7
+/usr/local/cuda-9.0/doc/man/man7/libcudart.7
+/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart_static.a
+/usr/local/cuda-8.0/targets/x86_64-linux/lib/libcudart.so.8.0.61
+/usr/local/cuda-8.0/doc/man/man7/libcudart.so.7
+/usr/local/cuda-8.0/doc/man/man7/libcudart.7
